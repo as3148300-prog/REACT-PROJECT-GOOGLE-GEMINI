@@ -2,6 +2,7 @@ import React from 'react'
 import Image from "../../assets/pfpimg.png"
 import Mic from "../../assets/mic-line.png"
 import file from "../../assets/file-image-line.png"
+import sent from "../../assets/send-plane-2-line.png"
 
 const Mainav = () => {
     return (
@@ -53,6 +54,7 @@ const Mainav = () => {
                         <div className='flex gap-[15px]'>
                             <img src={Mic} alt="" />
                             <img src={file} alt="" />
+                            <img src={sent} alt="" />
                         </div>
                     </div>
                     <p className='font-medium text-[13px]'>Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps</p>
