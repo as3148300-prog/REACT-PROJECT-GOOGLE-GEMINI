@@ -1,8 +1,11 @@
 import React from 'react'
 import Image from "../../assets/pfpimg.png"
+import Mic from "../../assets/mic-line.png"
+import file from "../../assets/file-image-line.png"
+
 const Mainav = () => {
     return (
-        <div className='h-[full] w-[92%] '>
+        <div className='h-[full] w-[92%] flex flex-col justify-between '>
             <div className='h-[8%] w-[100%]  '>
                 <div className='flex h-[100%] w-[100%] items-center justify-between px-[20px]'>
                     <h4 className='text-black text-2xl '>Gemini</h4>
@@ -23,24 +26,36 @@ const Mainav = () => {
                         </h3>
                         <div className='h-[35px] w-[35px] bg-white self-end rounded-full'></div>
                     </div>
-                     <div className='h-[220px] w-[220px]  p-[10px]   bg-[#F0F4F9] rounded-2xl flex flex-col justify-between'>
+                    <div className='h-[220px] w-[220px]  p-[10px]   bg-[#F0F4F9] rounded-2xl flex flex-col justify-between'>
                         <h3 className='text-[17px] italic '>
                             Suggest beautiful <br /> places to see on <br /> an upcoming road trip
                         </h3>
                         <div className='h-[35px] w-[35px] bg-white self-end rounded-full'></div>
                     </div>
-                     <div className='h-[220px] w-[220px]  p-[10px]   bg-[#F0F4F9] rounded-2xl flex flex-col justify-between'>
+                    <div className='h-[220px] w-[220px]  p-[10px]   bg-[#F0F4F9] rounded-2xl flex flex-col justify-between'>
                         <h3 className='text-[17px] italic '>
                             Suggest beautiful <br /> places to see on <br /> an upcoming road trip
                         </h3>
                         <div className='h-[35px] w-[35px] bg-white self-end rounded-full'></div>
                     </div>
-                     <div className='h-[220px] w-[220px]  p-[10px]   bg-[#F0F4F9] rounded-2xl flex flex-col justify-between'>
+                    <div className='h-[220px] w-[220px]  p-[10px]   bg-[#F0F4F9] rounded-2xl flex flex-col justify-between'>
                         <h3 className='text-[17px] italic '>
                             Suggest beautiful <br /> places to see on <br /> an upcoming road trip
                         </h3>
                         <div className='h-[35px] w-[35px] bg-white self-end rounded-full'></div>
                     </div>
+                </div>
+            </div>
+            <div className='h-[20%] w-full p-3 '>
+                <div className='flex flex-col items-center h-full w-full justify-end gap-2' >
+                    <div className='flex bg-[#F0F4F9] w-[50%] px-[5px] justify-between px-[22px] p-[16px] rounded-full '>
+                        <input className='outline-0  w-full' type="text" placeholder='Enter a Prompt here' />
+                        <div className='flex gap-[15px]'>
+                            <img src={Mic} alt="" />
+                            <img src={file} alt="" />
+                        </div>
+                    </div>
+                    <p className='font-medium text-[13px]'>Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps</p>
                 </div>
             </div>
 
